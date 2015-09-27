@@ -1,1 +1,126 @@
-﻿
+﻿@font-face {
+    font-family: "Arimo";
+    src: url("../fonts/ArimoRegular.eot");
+    src: url("../fonts/ArimoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoRegular.woff") format("woff"),
+    url("../fonts/ArimoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Arimo-Bold";
+    src: url("../fonts/ArimoBold.eot");
+    src: url("../fonts/ArimoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoBold.woff") format("woff"),
+    url("../fonts/ArimoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Arimo-Italic";
+    src: url("../fonts/ArimoItalic.eot");
+    src: url("../fonts/ArimoItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoItalic.woff") format("woff"),
+    url("../fonts/ArimoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-color: #FFFFFF;
+}
+.inner {
+	width: 1020px;
+	margin: 0 auto;
+}
+header {
+	height: 150px;
+}
+.header-top {
+	height: 85px;
+	background: url('../images/header-top-bg.png') no-repeat center bottom;
+	padding: 10px 0 0 100px;
+	color: #FFFFFF;
+}
+	.header-top > div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.header-top .logo {
+		width: 87px;
+		height: 58px;
+		margin-right: 20px;
+	}
+		.header-top .logo a {
+			display: block;
+			height: 58px;
+			background: url('../images/header-top-logo.png') no-repeat 0 0;
+		}
+	.header-top .action-label {
+		width: 100px;
+		height: 93px;
+		background: url('../images/header-top-action-label.png') no-repeat 0 top;
+		margin-top: -10px;
+		margin-right: 60px;
+	}
+	.header-top .slogan {
+		font-family: "Arimo";
+		padding-top: 5px;
+		margin-right: 190px;
+	}
+		.header-top .slogan h1 {
+			font-family: "Arimo-Bold";
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: normal;
+		}
+		.header-top .slogan span {
+			font-size: 14px;
+		}
+	.header-top .phones {
+		font-family: "Arimo-Bold";
+		padding-top: 5px;
+	}
+		.header-top .phones li {
+			list-style-image: url('../images/header-top-trubka.png');
+			margin-bottom: 3px;
+			font-size: 16px;
+		}
+nav {
+	height: 65px;
+	background-color: #A2DAFF;
+	padding: 0 75px;
+}
+	nav ul {
+		height: 65px;
+		background-color: #FFFFFF;
+		padding: 0 70px;
+		font-size: 0;
+		line-height: 0;
+		padding-top: 3px;
+	}
+	nav li {
+		display: inline-block;
+		vertical-align: middle;
+		height: 50px;
+		border-right: 1px solid #3884C2;
+	}
+		nav li:last-child {
+			border-right: none;
+		}
+		nav li a {
+			display: block;
+			height: 50px;
+			padding-right: 15px;
+			padding-left: 45px;
+			color: #0262AF;
+			font-family: "Arimo-Bold";
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			text-decoration: none;
+		}

@@ -25,6 +25,35 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+	font-family: "BebasNeueBold";
+	src: url('../fonts/bebasneuebold-webfont.eot');
+    src: url('../fonts/bebasneuebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneuebold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneuebold-webfont.woff') format('woff'),
+         url('../fonts/bebasneuebold-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneuebold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ScadaRegular";
+    src: url("../fonts/ScadaRegular/ScadaRegular.eot");
+    src: url("../fonts/ScadaRegular/ScadaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ScadaRegular/ScadaRegular.woff") format("woff"),
+    url("../fonts/ScadaRegular/ScadaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ScadaBold";
+    src: url("../fonts/ScadaBold/ScadaBold.eot");
+    src: url("../fonts/ScadaBold/ScadaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ScadaBold/ScadaBold.woff") format("woff"),
+    url("../fonts/ScadaBold/ScadaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -174,15 +203,104 @@ nav {
 		height: 318px;
 		margin: 0 auto;
 		background: url('../images/banner-photo.png') no-repeat 0 0;
+		position: relative;
 	}
+		.banner-photo > div {
+			position: absolute;
+			left: 210px;
+			width: 406px;
+			font-family: "BebasNeueBold";
+			text-align: center;
+			font-size: 28px;
+			color: #0262AF;
+		}
+		.banner-photo > div:nth-child(1) {
+			font-size: 30px;
+			top: 30px;
+		}
+			.banner-photo div span {
+				font-size: 34px;
+			}
+		.banner-photo > div:nth-child(2) {
+			top: 88px;
+		}
+		.banner-photo > div:nth-child(3) {
+			top: 124px;
+			color: #FFFFFF;
+		}
+		.banner-photo > div:nth-child(4) {
+			top: 156px;
+		}
+		.banner-photo > div:nth-child(5) {
+			top: 188px;
+		}
+		.banner-photo > div:nth-child(6) {
+			top: 220px;
+		}
 /*PERKS*/
 #perks {
 	height: 367px;
 	background: url('../images/perks-bg.png') no-repeat 0 0;
 	margin-top: -55px;
 	margin-bottom: 20px;
+	position: relative;
 }
+#get-free-consult {
+	width: 397px;
+	height: 74px;
+	display: block;
+	position: absolute;
+	background: url('../images/get-free-consult-bg.png') no-repeat 0 0;
+	border-radius: 30px;
+	text-align: center;
+	left: 318px;
+	top: 34px;
+	padding-top: 16px;
+	padding-left: 20px;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+	#get-free-consult:hover {
+		/* не могу представить путний эффект */
+	}
+	#perks ul {
+		text-align: center;
+		padding-top: 90px;
+	}
+	#perks li {
+		width: 190px;
+		height: 160px;
+		display: inline-block;
+		padding-top: 100px;
+		color: #0864AF;
+		vertical-align: top;
+		line-height: 18px;
+	}
+		#perks li:nth-child(1) {
+			background: url('../images/perk-1.png') no-repeat center 0;
+		}
+		#perks li:nth-child(2) {
+			background: url('../images/perk-2.png') no-repeat center 0;
+			margin-top: 50px;
+		}
+		#perks li:nth-child(3) {
+			background: url('../images/perk-3.png') no-repeat center 0;
+			margin-top: 80px;
+		}
+		#perks li:nth-child(4) {
+			background: url('../images/perk-4.png') no-repeat center 0;
+			margin-top: 50px;
+		}
+		#perks li:nth-child(5) {
+			background: url('../images/perk-5.png') no-repeat center 0;
+		}
 /*CONTENT*/
+#content {
+	margin-bottom: 80px;
+}
 .corrector-about {
 	height: 151px;
 	width: 870px;
@@ -203,3 +321,526 @@ nav {
 		font-size: 24px;
 		margin-bottom: 25px;
 	}
+	.how-to-video {
+		border: 4px solid #A1D2F2;
+		border-radius: 10px;
+		margin-left: 40px;
+		width: 620px;
+		height: 380px;
+		position: relative;
+		margin-bottom: 70px;
+	}
+	.player-bottom {
+		width: 620px;
+		height: 28px;
+		position: absolute;
+		left: -2px;
+		bottom: -31px;
+		background: url('../images/player-bottom.png') no-repeat -2px 0;
+	}
+		.how-to-video iframe {
+			border-radius: 8px;
+			height: 372px;
+			width: 612px;
+		}
+	.how-to-list {
+		position: absolute;
+		right: 0;
+		top: 50px;
+		height: 430px;
+		width: 310px;
+	}
+		.how-to-list li {
+			height: 105px;
+			position: relative;
+		}
+			.how-to-list li:nth-child(1) {
+				background: url('../images/how-to-number-1.png') no-repeat 0 10px;
+			}
+			.how-to-list li:nth-child(2) {
+				background: url('../images/how-to-number-2.png') no-repeat 0 10px;
+			}
+			.how-to-list li:nth-child(3) {
+				background: url('../images/how-to-number-3.png') no-repeat 0 10px;
+			}
+			.how-to-list li:nth-child(4) {
+				background: url('../images/how-to-number-4.png') no-repeat 0 10px;
+			}
+		.how-to-list-ico {
+			position: absolute;
+			top: 0;
+			left: 33px;
+			height: 120px;
+			width: 150px;
+		}
+			.how-to-list li:nth-child(1) .how-to-list-ico {
+				background: url('../images/how-to-ico-1.png') no-repeat center 0;
+			}
+			.how-to-list li:nth-child(2) .how-to-list-ico {
+				background: url('../images/how-to-ico-2.png') no-repeat center 0;
+			}
+			.how-to-list li:nth-child(3) .how-to-list-ico {
+				background: url('../images/how-to-ico-3.png') no-repeat center 0;
+			}
+			.how-to-list li:nth-child(4) .how-to-list-ico {
+				background: url('../images/how-to-ico-4.png') no-repeat center 0;
+			}
+		.how-to-list-text {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 120px;
+			width: 130px;
+			color: #186EB4;
+			font-size: 16px;
+			line-height: 18px;
+			padding-top: 20px;
+		}
+			.how-to-list li:nth-child(2) .how-to-list-text {
+				padding-top: 0;
+			}
+			.how-to-list li:nth-child(4) .how-to-list-text {
+				padding-top: 10px;
+			}
+.research {
+	height: 534px;
+	background: url('../images/research-bg.png') no-repeat center 20px;
+	margin-bottom: 40px;
+	position: relative;
+}
+	.research h2 {
+		text-align: center;
+		color: #186EB4;
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+	.diagramm {
+		position: absolute;
+		top: 185px;
+		left: 80px;
+		width: 154px;
+		height: 155px;
+		background: url('../images/diagramm.png') no-repeat 0 0;
+	}
+	.research > div {
+		color: #FFFFFF;
+		position: absolute;
+	}
+		.research-text-1 {
+			top: 190px;
+			left: 265px;
+			font-size: 40px;
+		}
+		.research-text-2 {
+			top: 190px;
+			left: 360px;
+			width: 325px;
+			line-height: 18px;
+		}
+		.research-text-3{
+			top: 270px;
+			left: 265px;
+			width: 420px;
+			height: 150px;
+			line-height: 18px;
+		}
+	#get-research {
+		width: 215px;
+		height: 270px;
+		background: #FFFFFF;
+		position: absolute;
+		top: 150px;
+		right: 85px;
+		box-shadow: 10px 10px 0 #0057A2;
+		padding: 20px 15px;
+	}
+		#get-research h3 {
+			color: #186EB4;
+			font-size: 20px;
+			line-height: 22px;
+			margin-bottom: 15px;
+		}
+		#get-research label {
+			line-height: 2px;
+			vertical-align: top;
+			color: #0262AF;
+		}
+		#get-research input {
+			display: block;
+			width: 185px;
+			margin-bottom: 10px;
+		}
+		#get-research input[type="text"] {
+			height: 20px;
+			background: #BEE3FC;
+		}
+		#get-research input[type="submit"] {
+			color: #FFFFFF;
+			font-size: 22px;
+			width: 182px;
+			height: 37px;
+			background: url('../images/get-research-button.png') no-repeat 0 0;
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+			#get-research input[type="submit"]:hover {
+				opacity: 0.75;
+			}
+.tovar {
+	position: relative;
+	height: 290px;
+}
+.grey-line {
+	width: 860px;
+	height: 3px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background: url('../images/grey-line.png') repeat-x 0 0;
+}
+	.tovar-left {
+		position: absolute;
+		top: 0;
+		left: 75px;
+		width: 380px;
+		text-align: center;
+	}
+		.tovar-left h3 {
+			color: #186EB4;
+			font-size: 18px;
+			line-height: 20px;
+			margin-bottom: 25px;
+			display: block;
+			text-align: center;
+		}
+	.tovar-right {
+		position: absolute;
+		top: 0;
+		right: 100px;
+		width: 420px;
+	}
+		.tovar-right table {
+			margin-bottom: 20px;
+			border-collapse: collapse;
+			border: 2px solid #FFFFFF;
+		}
+		.tovar-right table * {
+			text-align: left;
+			vertical-align: middle;
+			color: #0262AF;
+			border: 2px dashed #0262AF;
+		}
+			.tovar-right th:nth-child(1),
+			.tovar-right th:nth-child(2),
+			.tovar-right td:nth-child(1),
+			.tovar-right td:nth-child(2) {
+				width: 80px;
+				text-align: center;
+			}
+			.tovar-right th:nth-child(3),
+			.tovar-right td:nth-child(3) {
+				width: 280px;
+				padding-left: 15px;
+			}
+		.tovar-right tr {
+			height: 45px;
+		}
+		.tovar-right a {
+			display: block;
+			text-decoration: none;
+			width: 218px;
+			height: 41px;
+			margin-left: 202px;
+			border-radius: 100px;
+			color: #FFFFFF;
+			text-align: center;
+			background: url('../images/oformit.png') no-repeat 0 0;
+			font-family: "ScadaBold";
+			padding-top: 12px;
+			transition: all 0.3s;
+		}
+			.tovar-right a:hover {
+				opacity: 0.75;
+			}
+.otzivi {
+	margin-bottom: 20px;
+}
+	.otzivi-top {
+		height: 75px;
+		background: url('../images/otzivi-top.png') no-repeat center 0;
+		color: #FFFFFF;
+		text-align: center;
+		font-family: "ScadaBold";
+		font-size: 26px;
+		padding-top: 24px;
+		margin-bottom: 10px;
+	}
+	.otziv {
+		width: 830px;
+		height: 180px;
+		margin: 0 auto;
+		position: relative;
+	}
+		.otziv:before, .otziv:after {
+			content: '';
+			position: absolute;
+			top: 75px;
+			width: 32px;
+			height: 59px;
+			cursor: pointer;
+		}
+		.otziv:before {
+			left: -32px;
+			background: url('../images/otziv-before.png') no-repeat 0 0;
+		}
+		.otziv:after {
+			right: -32px;
+			background: url('../images/otziv-after.png') no-repeat 0 0;
+		}
+.callback {
+	height: 443px;
+	background: url('../images/callback-bg.png') no-repeat center 0;
+	padding-top: 135px;
+	position: relative;
+	margin-bottom: 45px;
+}
+	.callback-woman {
+		width: 127px;
+		height: 202px;
+		position: absolute;
+		top: 130px;
+		left: 220px;
+		background: url('../images/callback-woman.png') no-repeat 0 0;
+	}
+	.callback form {
+		margin: 0 auto;
+		width: 300px;
+	}
+	.callback label {
+		line-height: 2px;
+		vertical-align: top;
+		padding-left: 60px;
+		color: #0062B3;
+		font-family: "ScadaRegular";
+	}
+	.callback input {
+		display: block;
+		width: 180px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.callback input[type="text"] {
+		height: 20px;
+		background: #BEE3FC;
+	}
+	#callback-button {
+		display: block;
+		width: 300px;
+		height: 56px;
+		border-radius: 100px;
+		background: url('../images/callback-button.png') no-repeat 0 0;
+		font-size: 18px;
+		text-decoration: none;
+		padding-top: 10px;
+		color: #FFFFFF;
+		font-family: "ScadaBold";
+		text-align: center;
+		transition: all 0.3s;
+	}
+		#callback-button:hover {
+			opacity: 0.75;
+		}
+.dostavka {
+	position: relative;
+	height: 205px;
+	margin-bottom: 30px;
+}
+	.dostavka > div {
+		position: absolute;
+		width: 460px;
+		height: 205px;
+		top: 0;
+		left: 0;
+		text-align: right;
+		color: #0262AF;
+		font-family: "ScadaBold";
+	}
+		.dostavka > div h2 {
+			margin-bottom: 45px;
+			font-weight: normal;
+			font-size: 24px;
+		}
+		.dostavka > div div {
+			font-family: "ScadaRegular";
+			font-weight: bold;
+			height: 20px;
+		}
+	.dostavka form {
+		position: absolute;
+		width: 385px;
+		height: 205px;
+		top: 0;
+		right: 140px;
+		background: #0062B3;
+		padding: 20px;
+	}
+		.dostavka form h3 {
+			font-family: "ScadaBold";
+			color: #FFFFFF;
+			font-weight: normal;
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+		.dostavka form label {
+			display: inline-block;
+			width: 170px;
+			color: #FFFFFF;
+			font-family: "ScadaRegular";
+			margin-bottom: 20px;
+		}
+		.dostavka form input {
+			margin-top: 10px;
+			width: 160px;
+			height: 22px;
+			background: #BEE3FC;
+		}
+		#dostavka-button {
+			display: block;
+			width: 240px;
+			height: 40px;
+			margin: 0 auto;
+			background: url('../images/dostavka-button.png') no-repeat 0 0;
+			color: #0262AF;
+			font-size: 22px;
+			font-family: "ScadaBold";
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+			#dostavka-button:hover {
+				opacity: 0.75;
+			}
+.where-to-buy {
+
+}
+	.where-to-buy h2 {
+		color: #0262AF;
+		text-align: center;
+		font-family: "ScadaBold";
+		font-size: 24px;
+		font-weight: normal;
+		margin-bottom: 30px;
+	}
+	.where-to-buy .column {
+		width: 33%;
+		display: inline-block;
+		color: #0262AF;
+		vertical-align: top;
+	}
+		.where-to-buy .column > div{
+			padding-top: 85px;
+			font-family: "ScadaRegular";
+			font-weight: bold;
+			margin-bottom: 50px;
+		}
+		.where-to-buy .item1 {
+			padding-top: 125px !important;
+			background: url('../images/where-to-buy-1.png') no-repeat 0 0;
+		}
+		.where-to-buy .item2 {
+			background: url('../images/where-to-buy-2.png') no-repeat 0 0;
+			margin-bottom: 80px !important;
+		}
+		.where-to-buy .item3 {
+			background: url('../images/where-to-buy-3.png') no-repeat 0 0;
+		}
+		.where-to-buy .item4 {
+			background: url('../images/where-to-buy-4.png') no-repeat 0 0;
+		}
+		.where-to-buy .item5 {
+			background: url('../images/where-to-buy-5.png') no-repeat 0 0;
+		}
+		.where-to-buy .item6 {
+			background: url('../images/where-to-buy-6.png') no-repeat 0 0;
+		}
+		.where-to-buy .item7 {
+			background: url('../images/where-to-buy-7.png') no-repeat 0 0;
+		}
+	#sotrudnichestvo {
+		display: block;
+		width: 264px;
+		height: 68px;
+		border-radius: 2px;
+		background: url('../images/sotrudnichestvo.png') no-repeat 0 0;
+		color: #FFFFFF;
+		text-align: center;
+		text-decoration: none;
+		padding-left: 70px;
+		font-family: "ScadaRegular";
+		padding-top: 12px;
+		font-size: 20px;
+		transition: all 0.3s;
+	}
+		#sotrudnichestvo:hover {
+			opacity: 0.75;
+		}
+.footer-line {
+	height: 13px;
+	background: #0064B3;
+}
+footer {
+	height: 146px;
+	margin-top: -72px !important;
+	background: url('../images/footer-bg.png') no-repeat center 0;
+	position: relative;
+}
+	.footer-phones {
+		position: absolute;
+		top: 45px;
+		left: 250px;
+	}
+		.footer-phones li {
+			color: #0864AF;
+			display: inline-block;
+			padding-left: 26px;
+			font-family: "Arimo";
+			background: url('../images/footer-phones-ico.png') no-repeat 0 0;
+			margin-right: 20px;
+		}
+	.footer-links {
+		position: absolute;
+		bottom: 10px;
+		left: 60px;
+	}
+		.footer-links a {
+			display: inline-block;
+			padding-left: 30px;
+			color: #0864AF;
+			line-height: 26px;
+			background: url('../images/footer-links-ico.png') no-repeat 0 0;
+			margin-bottom: 3px;
+		}
+	.footer-info {
+		position: absolute;
+		bottom: 20px;
+		left: 300px;
+		color: #9A9A9A;
+		font-family: "Arimo";
+		font-size: 12px;
+		text-align: center;
+	}
+	.footer-kassa {
+		display: block;
+		position: absolute;
+		bottom: 20px;
+		right: 60px;
+		width: 131px;
+		height: 26px;
+		background: url('../images/footer-kassa.png') no-repeat 0 0;
+	}
+/*ОФОРМЛЕНИЕ ЗАКАЗА*/
+h2.zakaz {
+	text-align: center;
+	color: #0064B3;
+	font-weight: normal;
+	font-family: "ScadaBold";
+	font-size: 28px;
+}

@@ -32,11 +32,13 @@
 }
 body {
 	background-color: #FFFFFF;
+	font-family: "Scada",sans-serif;
 }
 .inner {
 	width: 1020px;
 	margin: 0 auto;
 }
+/*HEADER, MENU*/
 header {
 	height: 150px;
 }
@@ -93,15 +95,14 @@ header {
 nav {
 	height: 65px;
 	background-color: #A2DAFF;
-	padding: 0 75px;
 }
 	nav ul {
 		height: 65px;
 		background-color: #FFFFFF;
-		padding: 0 70px;
+		padding: 0 50px;
 		font-size: 0;
 		line-height: 0;
-		padding-top: 3px;
+		padding-top: 7px;
 	}
 	nav li {
 		display: inline-block;
@@ -109,18 +110,96 @@ nav {
 		height: 50px;
 		border-right: 1px solid #3884C2;
 	}
-		nav li:last-child {
-			border-right: none;
+		nav li:nth-child(1) {
+			width: 158px;
+			background: url('../images/menu-ico-1.png') no-repeat 14px center;
 		}
+			nav li:nth-child(1) a {
+				padding-top: 7px;
+			}
+		nav li:nth-child(2) {
+			width: 185px;
+			background: url('../images/menu-ico-2.png') no-repeat 14px center;
+		}
+			nav li:nth-child(2) a {
+				padding-top: 15px;
+			}
+		nav li:nth-child(3) {
+			width: 165px;
+			background: url('../images/menu-ico-3.png') no-repeat 14px center;
+		}
+			nav li:nth-child(3) a {
+				padding-top: 7px;
+			}
+		nav li:nth-child(4) {
+			width: 112px;
+			background: url('../images/menu-ico-4.png') no-repeat 14px center;
+		}
+			nav li:nth-child(4) a {
+				padding-top: 15px;
+			}
+		nav li:nth-child(5) {
+			width: 133px;
+			background: url('../images/menu-ico-5.png') no-repeat 14px center;
+		}
+			nav li:nth-child(5) a {
+				padding-top: 15px;
+			}
+		nav li:nth-child(6) {
+			border-right: none;
+			width: 130px;
+			background: url('../images/menu-ico-6.png') no-repeat 14px center;
+		}
+			nav li:nth-child(6) a {
+				padding-top: 15px;
+			}
 		nav li a {
 			display: block;
 			height: 50px;
-			padding-right: 15px;
 			padding-left: 45px;
 			color: #0262AF;
 			font-family: "Arimo-Bold";
-			font-size: 14px;
+			font-size: 12px;
 			line-height: 18px;
 			text-align: center;
 			text-decoration: none;
 		}
+/*BANNER*/
+#banner {
+	height: 330px;
+	background: url('../images/banner-bg.png') no-repeat 0 0;
+}
+	.banner-photo {
+		width: 806px;
+		height: 318px;
+		margin: 0 auto;
+		background: url('../images/banner-photo.png') no-repeat 0 0;
+	}
+/*PERKS*/
+#perks {
+	height: 367px;
+	background: url('../images/perks-bg.png') no-repeat 0 0;
+	margin-top: -55px;
+	margin-bottom: 20px;
+}
+/*CONTENT*/
+.corrector-about {
+	height: 151px;
+	width: 870px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 30px 0 0 190px;
+	color: #186EB4;
+	font-size: 16px;
+	line-height: 20px;
+	background: url('../images/corrector-about-bg.png') no-repeat 0 0;
+}
+.how-to {
+	position: relative;
+}
+	.how-to h2 {
+		text-align: center;
+		color: #186EB4;
+		font-size: 24px;
+		margin-bottom: 25px;
+	}

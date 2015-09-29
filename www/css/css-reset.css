@@ -82,3 +82,9 @@ input, select, texarea {
 	border: none;
 	-webkit-appearance: none;
 }
+input, input:focus, textarea, textarea:focus, select {
+    vertical-align:middle;
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
